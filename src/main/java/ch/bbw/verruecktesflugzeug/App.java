@@ -1,15 +1,17 @@
 package ch.bbw.verruecktesflugzeug;
 
+import java.io.IOException;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
-    	Verruecktes_Flugzeug veruecktesflugzeug = new Verruecktes_Flugzeug();
-    	veruecktesflugzeug.flugzeug();	    
+    	Verruecktes_Flugzeug flugzeug = new Verruecktes_Flugzeug();
+    	flugzeug.createCard();	    
     	
     }
 }
