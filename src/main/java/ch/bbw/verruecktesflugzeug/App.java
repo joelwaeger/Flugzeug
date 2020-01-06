@@ -12,6 +12,7 @@ public class App
     {
     	Verruecktes_Flugzeug flugzeug = new Verruecktes_Flugzeug();
     	flugzeug.createCard();	    
-    	
+    	flugzeug.ReadCard();
+    //	flugzeug.nextPossibleMoves(null, null);
     }
 }

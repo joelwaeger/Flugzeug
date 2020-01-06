@@ -1,8 +1,13 @@
 package ch.bbw.verruecktesflugzeug;
 
+import java.util.HashMap;
 
 public class Field {
 
+	Card[][] cards = new Card[3][3];
+	 HashMap<String , Card> history = new HashMap<>();
+	private int x =0;
+	private int y = 0;
 
 	public boolean isFull() {
 		// TODO Auto-generated method stub
@@ -13,7 +18,11 @@ public class Field {
 		return null;
 	}
 	public Field addedIfFits(Card card) {
-		// TODO Auto-generated method stub
+		
+
+		if(x == 0 && y == 0) {
+			this.cards[x][y] = card;
+		}
 		return null;
 	}
 

@@ -1,24 +1,46 @@
 package ch.bbw.verruecktesflugzeug;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 public class Verruecktes_Flugzeug {
 	Random random = new Random();
+	List<Card> cards = new ArrayList<Card>();
 
 	public void createCard() throws IOException {
-		BufferedWriter writer = new BufferedWriter(new FileWriter(
-				"E:\\Schule\\3. Lehrjahr\\BBW\\Modul 411\\eclipse\\verruecktesflugzeug\\File\\Flugzeug.txt"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(new File("Files/flugzeug.txt")));
 
 		for (int i = 0; i < 9; i++) {
-			writer.write(random.nextInt(2) + " / " + random.nextInt(3) + " , ");
+			for (int a = 0; a < 4; a++) {
+				writer.write(random.nextInt(2) + "," + random.nextInt(3) + "/");
+			}
 			writer.newLine();
-		};
+		}
+		;
+		writer.close();
+
+	}
+
+	public void ReadCard() throws IOException {
+		String LineReader;
+
+		FileReader fr = new FileReader("Files/flugzeug.txt");
+		BufferedReader br = new BufferedReader(fr);
 		
+		while ((LineReader = br.readLine()) != null) {
+			System.out.println(LineReader);
+			String[] parts = LineReader.split("/");
+			cards.add(new Card(parts[0], parts[1], parts[2], parts[3]));
+		}
+
 	}
 
 	List<Field> nextPossibleMoves(Field field, List<Card> remainingCards) {
