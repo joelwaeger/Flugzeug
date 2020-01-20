@@ -7,15 +7,15 @@ public class Card {
 
 	
 	private String up;
-	private String down;
 	private String right;
+	private String down;
 	private String left;
 	
-	public Card(String up, String down, String right, String left) {
+	public Card(String up, String right, String down, String left) {
 		super();
 		this.up = up;
-		this.down = down;
-		this.right = right;
+		this.down = right;
+		this.right = down;
 		this.left = left;
 	}
 

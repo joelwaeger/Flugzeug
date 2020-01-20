@@ -17,16 +17,32 @@ public class Verruecktes_Flugzeug {
 
 	public void createCard() throws IOException {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(new File("Files/flugzeug.txt")));
-
+		String[] color = {"red", "green", "blue"};
+		String[] Side = {"Front", "Back"};
+		
 		for (int i = 0; i < 9; i++) {
-			for (int a = 0; a < 4; a++) {
-				writer.write(random.nextInt(2) + "," + random.nextInt(3) + "/");
-			}
+//			for (int a = 0; a < 3; a++) {
+			writer.write("			" + Side[random.nextInt(Side.length)] + "," + color[random.nextInt(color.length)] + "		   ");
 			writer.newLine();
-		}
-		;
+			writer.write("                                                                                                 							");
+			writer.newLine();
+			writer.write("                                                                                                				    		");
+			writer.newLine();
+			writer.write(Side[random.nextInt(Side.length)] + "," + color[random.nextInt(color.length)] + "		-		"+Side[random.nextInt(Side.length)] + "," + color[random.nextInt(color.length)]);
+			writer.newLine();
+			writer.write("                                                                                                 							");
+			writer.newLine();
+			writer.write("                                                                                                				    		");
+			writer.newLine();
+			writer.write("			" + Side[random.nextInt(Side.length)] + "," + color[random.nextInt(color.length)] + "		   ");
+			writer.newLine();
+//			writer.write(Side[random.nextInt(Side.length)] + "," + color[random.nextInt(color.length)]+"/");
+//			}
+			writer.write("");
+			writer.newLine();
+			
+		};
 		writer.close();
-
 	}
 
 	public void ReadCard() throws IOException {
@@ -35,11 +51,11 @@ public class Verruecktes_Flugzeug {
 		FileReader fr = new FileReader("Files/flugzeug.txt");
 		BufferedReader br = new BufferedReader(fr);
 		
-		while ((LineReader = br.readLine()) != null) {
-			System.out.println(LineReader);
-			String[] parts = LineReader.split("/");
-			cards.add(new Card(parts[0], parts[1], parts[2], parts[3]));
-		}
+//		while ((LineReader = br.readLine()) != null) {
+//			System.out.println(LineReader);
+//			String[] parts = LineReader.split("/");
+//			cards.add(new Card(parts[0], parts[1], parts[2], parts[3]));
+//		}
 
 	}
 

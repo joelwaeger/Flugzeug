@@ -1,9 +1,72 @@
-1,1/0,0/0,2/1,2/
-0,1/0,0/1,0/1,2/
-1,0/0,2/1,2/0,1/
-1,1/0,1/1,1/1,0/
-1,2/0,0/0,2/0,1/
-1,2/0,0/1,1/0,0/
-1,1/0,2/1,0/1,2/
-1,0/0,2/1,0/1,0/
-1,1/1,2/0,2/1,0/
+			Back,red		   
+                                                                                                 							
+                                                                                                				    		
+Back,green		-		Front,blue
+                                                                                                 							
+                                                                                                				    		
+			Back,blue		   
+
+			Front,green		   
+                                                                                                 							
+                                                                                                				    		
+Front,red		-		Front,blue
+                                                                                                 							
+                                                                                                				    		
+			Back,blue		   
+
+			Back,blue		   
+                                                                                                 							
+                                                                                                				    		
+Front,red		-		Front,red
+                                                                                                 							
+                                                                                                				    		
+			Front,blue		   
+
+			Front,green		   
+                                                                                                 							
+                                                                                                				    		
+Front,green		-		Front,blue
+                                                                                                 							
+                                                                                                				    		
+			Back,blue		   
+
+			Front,green		   
+                                                                                                 							
+                                                                                                				    		
+Back,blue		-		Back,blue
+                                                                                                 							
+                                                                                                				    		
+			Front,green		   
+
+			Back,red		   
+                                                                                                 							
+                                                                                                				    		
+Front,blue		-		Back,blue
+                                                                                                 							
+                                                                                                				    		
+			Front,red		   
+
+			Back,blue		   
+                                                                                                 							
+                                                                                                				    		
+Back,green		-		Back,red
+                                                                                                 							
+                                                                                                				    		
+			Back,blue		   
+
+			Front,red		   
+                                                                                                 							
+                                                                                                				    		
+Front,green		-		Back,blue
+                                                                                                 							
+                                                                                                				    		
+			Front,blue		   
+
+			Back,green		   
+                                                                                                 							
+                                                                                                				    		
+Front,red		-		Front,green
+                                                                                                 							
+                                                                                                				    		
+			Front,blue		   
+
